@@ -47,7 +47,7 @@ const AppointmentForm = () => {
     e.preventDefault();
     try {
       const hasVisitedBool = Boolean(hasVisited);
-      const { data } = await axios.post("https://vercel.com/rashmis-projects-3cacc26c/vercel-backend-a/appointment/post", {
+      const { data } = await axios.post("https://vercel.com/rashmis-projects-3cacc26c/vercel-backend-a/v1/appointment/post", {
         firstName,
 
         lastName,
