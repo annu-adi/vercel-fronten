@@ -21,7 +21,7 @@ const App = () => {
    useEffect(() =>{
     const fetchUser = async () =>{
       try{
-        const response = await axios.get("https://vercel-backend-a.vercel.app/user/patient/me", {withCredentials:true});
+        const response = await axios.get("https://vercel-backend-a.vercel.app/v1/user/patient/me", {withCredentials:true});
         setIsAuthenticated(true);
         setUser(response.data.user);
 
