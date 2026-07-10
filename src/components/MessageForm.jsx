@@ -20,7 +20,7 @@ const MessageForm =()=>{
   try{
     await axios
     .post(
-     "https://vercel-backend-bqw8.vercel.app/message/send",
+     "https://vercel-backend-bqw8.vercel.app/v1/message/send",
       {firstName, lastName, phone,address, email, message},
       {
         withCredentials:true,
