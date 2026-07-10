@@ -14,7 +14,7 @@ const Navbar = () =>{
 
     const handleLogout = async () =>{
         
-            await axios.get("https://vercel-backend-a.vercel.app/user/patient/logout", {
+            await axios.get("https://vercel-backend-a.vercel.app/v1/user/patient/logout", {
               withCredentials:true,  
             })
             .then(res=>{
